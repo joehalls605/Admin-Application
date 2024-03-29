@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Application</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div id="navigation">
+        <nav>
+            <h1>Admin Application</h1>
+            <ul>
+                <li>Rides</li>
+                <li>Events</li>
+                <li>Membership</li>
+                <li>News</li>
+            </ul>
+        </nav>
+    </div>
+    <div id="content">
+        <div class="row">
+            <div class="column">
+                <h2>Ride Events Management</h2>
+                <br>
+                <h3>Upcoming Rides</h3>
+                <table id="eventTable">
+                    <thead>
+                        <tr>
+                            <th>Name of Ride:</th>
+                            <th>Ride Type</th>
+                            <th>Date of Ride:</th>
+                            <th>Start time: </th>
+                            <th>Duration:</th>
+                            <th>Meeting point:</th>
+                            <th>Distance (km):</th>
+                            <th>Elevation (m)</th>
+                            <th>Max group size:</th>
+                            <th>Name:</th>
+                            <th>Contact number:</th>
+                            <th>Alternative number: </th>
+                            <th>Comments:</th>
+                            <th>Status:</th>
+                            <th>Edit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>High Watcombe to Walton</td>
+                            <td>Road</td>
+                            <td>5/06/2024</td>
+                            <td>10.00am</td>
+                            <td>120 mins</td>
+                            <td>Watcombe Fields Entrance A</td>
+                            <td>22</td>
+                            <td>200</td>
+                            <td>12</td>
+                            <td>Helen Smith</td>
+                            <td>07774075441</td>
+                            <td>07725076814</td>
+                            <td>flat ride, suitable for beginners and senior members</td>
+                            <td>Approved</td>
+                            <td><button>Edit</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="newEventColumn">
+                <br>
+                <h3>Add New Ride Event</h3>
+                <form id="addEventForm">
+                    <label for="rideName">Name of Ride:</label><br>
+                    <input type="text" id="rideName" name="rideName"><br><br>
+                    <label for="rideType">Type of Ride:</label><br>
+                    <input type="text" id="rideType" name="rideType"><br><br>
+                    <label for="rideDate">Date of Ride:</label><br>
+                    <input type="date" id="rideDate" name="rideDate"><br><br>
+                    <label for="startTime">Start Time:</label><br>
+                    <input type="time" id="startTime" name="startTime"><br><br>
+                    <label for="duration">Duration (minutes):</label><br>
+                    <input type="number" id="duration" name="duration"><br><br>
+                    <label for="meetingPoint">Meeting Point:</label><br>
+                    <input type="text" id="meetingPoint" name="meetingPoint"><br><br>
+                    <label for="distance">Distance (km):</label><br>
+                    <input type="number" id="distance" name="distance"><br><br>
+                    <label for="elevation">Elevation (m):</label><br>
+                    <input type="number" id="elevation" name="elevation"><br><br>
+                    <label for="maxGroupSize">Max Group Size:</label><br>
+                    <input type="number" id="maxGroupSize" name="maxGroupSize"><br><br>
+                    <label for="leaderName">Name of Leader:</label><br>
+                    <input type="text" id="leaderName" name="leaderName"><br><br>
+                    <label for="contactNumber">Contact Number:</label><br>
+                    <input type="tel" id="contactNumber" name="contactNumber"><br><br>
+                    <label for="altContactNumber">Alternative Contact Number:</label><br>
+                    <input type="tel" id="altContactNumber" name="altContactNumber"><br><br>
+                    <label for="comments">Comments:</label><br>
+                    <textarea id="comments" name="comments"></textarea><br><br>
+                    <label for="status">Status:</label><br>
+                    <select id="status" name="status"><br>
+                        <option value="Proposed">Proposed</option>
+                        <option value="Approved">Approved</option>
+                        <option value="Rejected">Rejected</option>
+                    </select><br><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Admin Application 2024</p>
+    </footer>

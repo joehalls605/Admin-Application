@@ -73,3 +73,27 @@ footer {
     text-align: center;
     justify-content: center;
 }
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-right: 30px;
+}
+
+th, td {
+    border: 1px solid lightgray;
+    text-align: left;
+    padding: 8px;
+  }
+
+ input{
+    padding: 5px;
+ }
+ #addEventForm{
+    width: 100%;
+ }
+
+ #newEventColumn{
+    width: 100%;
+ }
+
