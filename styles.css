@@ -15,7 +15,6 @@ body {
     justify-content: space-between;
     max-width: 1024px;
     margin: 0 auto;
-    padding: 0 20px;
 }
 
 #navigation h1 {
@@ -29,11 +28,12 @@ nav ul {
 }
 
 nav li {
-    margin-right: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 nav li:last-child {
-    margin-right: 0;
+    margin-right: 220px;
 }
 
 nav a {
@@ -66,14 +66,10 @@ nav a {
 }
 
 footer {
-    height: 70px;
-    margin: 30px;
+    height: 50px;
     display: flex;
+    margin-top: 50px;
     background-color: lightgray;
     text-align: center;
     justify-content: center;
-}
-
-#content {
-    padding: 0 20px;
 }
