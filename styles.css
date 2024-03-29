@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 1024px;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+#navigation nav{
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+}
+
+#navigation h1 {
+    margin-right: 450px;
+    margin-left: 15px; /* Add spacing between h1 and ul */
+}
+
+nav ul {
+    display: flex;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    margin-right: 30px;
+}
+
+nav li:last-child {
+    margin-right: 0px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    margin-left: 150px;
+    margin-top: 50px;
+}
+
+
+.row img{
+    width: 400px;
+    border: 1px solid black;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.membership-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.membership-details {
+    margin-left: 20px; /* Adjust as needed for spacing */
+}
