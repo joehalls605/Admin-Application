@@ -4,21 +4,22 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.container {
-    width: 1024px;
-    margin: 0 auto;
-    padding: 5px;
+#navigation {
+    width: 100%;
+    background-color: lightgray;
 }
 
-#navigation nav{
-    background-color: aliceblue;
+#navigation nav {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 #navigation h1 {
-    margin-right: 450px;
-    margin-left: 15px; /* Add spacing between h1 and ul */
+    margin: 0;
 }
 
 nav ul {
@@ -32,7 +33,7 @@ nav li {
 }
 
 nav li:last-child {
-    margin-right: 0px;
+    margin-right: 0;
 }
 
 nav a {
@@ -40,15 +41,14 @@ nav a {
     color: black;
 }
 
-.row{
+.row {
     display: flex;
     flex-direction: row;
     margin-left: 150px;
-    margin-top: 50px;
+    margin-top: 15px;
 }
 
-
-.row img{
+.row img {
     width: 400px;
     border: 1px solid black;
     margin-right: 10px;
@@ -58,9 +58,22 @@ nav a {
 .membership-info {
     display: flex;
     align-items: center;
-    margin-bottom: 50px;
 }
 
 .membership-details {
-    margin-left: 20px; /* Adjust as needed for spacing */
+    margin-left: 20px;
+    width: 500px;
+}
+
+footer {
+    height: 70px;
+    margin: 30px;
+    display: flex;
+    background-color: lightgray;
+    text-align: center;
+    justify-content: center;
+}
+
+#content {
+    padding: 0 20px;
 }
